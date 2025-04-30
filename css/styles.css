@@ -3,7 +3,7 @@ body {
   margin: 5px;
   border: 1px solid black;
   border-radius: 10px;
-  height: 95vh;
+  height: 98vh
 }
 
 .titulo-con-lineas {
@@ -22,11 +22,11 @@ body {
   width: 100%;
 }
 
-.labelPresupuesto>h4{
+.labelPresupuesto>h4 {
   margin: 0;
 }
 
-.labelPresupuesto>span{
+.labelPresupuesto>span {
   font-size: 10px;
 }
 
@@ -41,8 +41,20 @@ body {
   margin-bottom: 20px;
 }
 
+.border-datos {
+  background-color: #f0f0f0 !important;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
 .client-info td {
   padding: 5px;
+}
+
+button{
+  border-radius: 5px !important;
+  border: 1px solid #b8b8b8 !important
 }
 
 .client-info input {
@@ -50,6 +62,12 @@ body {
   border: none;
   border-bottom: 1px solid #000;
   font-size: 14px;
+}
+
+input{
+  background-color: #f0f0f0 !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 table.budget {
@@ -74,14 +92,24 @@ table.budget th {
   align-items: center;
 }
 
-.form>label>input{
+.form>label>input {
   width: 70%;
+}
+
+footer>span{
+  font-size: 10px;
 }
 
 @media print {
   body {
     margin: 0;
     font-size: 12pt;
+  }
+
+  .border-datos {
+    background-color: #f0f0f0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .titulo-con-lineas {
@@ -98,6 +126,12 @@ table.budget th {
 
   .add-button {
     display: none;
+  }
+
+  input{
+    background-color: #f0f0f0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   input::placeholder {
@@ -117,4 +151,9 @@ table.budget th {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
+
+  footer>span{
+    font-size: 10px;
+  }
+
 }

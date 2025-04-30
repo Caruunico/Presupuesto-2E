@@ -22,21 +22,20 @@
             <img src="./assets/nada.png" width="280" height="125" class="mt-2">
         </div>
         <div class="col-5 text-end"> 
-            <img src="./assets/2e.png" width="170" height="125" class="mt-2">
+            <img src="./assets/2e.png" width="170" height="125" class="mt-2" style="transform: rotate(2deg);">
         </div>
         <div class="col-3 labelPresupuesto d-flex justify-content-end align-items-center">
             <h4>PRESUPUESTO</h4>
-            <!-- <span>Documento no válido como factura</span> -->
         </div>
     </div>
-    <div class="row m-3">
-        <div class="col-4">La Paz 7347 - 2000 Rosario</div>
-        <div class="col-4 text-center">Tel: 341 6930202 <br> 341 6744792</div>
-        <div class="col-4">C.U.I.T. 20-31082344-9</div>
+    <div class="row border-datos m-3 p-3">
+        <div class="col-4 text-start">La Paz 7347 - 2000 Rosario</div>
+        <div class="col-4 text-center">341 6930202 / 341 6744792</div>
+        <div class="col-4 text-end">C.U.I.T. 20-31082344-9</div>
     </div>
 
-    <div class="row m-3">
-        <table class="col client-info">
+    <div class="row border-datos m-3">
+        <table class="col client-info m-3">
             <tr>
                 <td>Destinatario:</td>
                 <td><input type="text" placeholder="Nombre del destinatario"></td>
@@ -74,7 +73,8 @@
             </tbody>
         </table>
 
-        <footer class="w-100 m-3 d-flex justify-content-end align-items-center">
+        <footer class="w-100 m-3 d-flex justify-content-between align-items-center">
+            <span>Documento no válido como factura</span>
             <label class="text-end fw-bold mr-2">TOTAL: <span id="totalGeneral" class="fw-bold">$ 0,00</span></label>
         </footer>
     </div>
